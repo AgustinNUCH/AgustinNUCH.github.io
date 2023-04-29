@@ -1,0 +1,1368 @@
+<!--
+  Portafolio template
+  https://github.com/jaglux12/portafolio-template
+
+  Follow us 
+  @devsiderio - https://github.com/devsiderio
+  @jaglux12 - https://github.com/jaglux12
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mi portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CDN - Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- CDN - Bootstrap Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS locales -->
+    <link rel="stylesheet" href="css/style-body.css" />
+    <link rel="stylesheet" href="css/style-header.css" />
+    <link rel="stylesheet" href="css/style-articulos.css" />
+    <link rel="stylesheet" href="css/style-skills.css" />
+  </head>
+
+  <body>
+    <!-- ========= Developer profile -->
+    <header class="container-fluid px-5 pt-5">
+      <!-- Blank space -->
+      <div class="row d-block d-md-none mb-5">
+        <div class="d-flex justify-content-end"></div>
+      </div>
+
+      <!-- Foto de perfil -->
+      <div class="row d-block d-md-none justify-content-center px-5 mb-3">
+        <div class="col-12 d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-center rounded-circle overflow-hidden circuloPerfil"
+          >
+            <img
+              src="img/logo-removebg-preview.png"
+              alt=""
+              style="width: 90px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Nombre del desarrollador -->
+      <div class="row d-block d-md-none justify-content-center">
+        <div class="col-12 d-flex justify-content-center flex-column">
+          <h1 class="Nombre mt-3 text-center">José Agustín</h1>
+          <label class="Trabajo text-center"
+            >Desarrollador de Sistemas embebebidos</label
+          >
+        </div>
+      </div>
+    </header>
+    <!-- ========= -->
+
+    <!-- Body main content -->
+    <!-- ======== Diseño para dispositivos móviles ======== -->
+    <section class="d-block d-md-none">
+      <article class="px-5 pb-5">
+        <!-- Información del desarrollador -->
+        <div
+          class="d-block d-md-none justify-content-center py-4 d-flex flex-row mt-4 rounded"
+        >
+          <div class="d-flex flex-column">
+            <h1 class="Titulo text-center">1</h1>
+            <label class="SubTitulos text-center w-100">
+              Años de <br />
+              experiencia
+            </label>
+          </div>
+          <div class="d-flex flex-column mx-3">
+            <h1 class="Titulo text-center">4</h1>
+            <label class="SubTitulos text-center w-100">
+              Proyectos<br />en proceso</label
+            >
+          </div>
+          <div class="d-flex flex-column">
+            <h1 class="Titulo text-center">1</h1>
+            <label class="SubTitulos text-center w-100">
+              Proyectos <br />
+              completos
+            </label>
+          </div>
+        </div>
+
+        <!-- Descargar curriculum y redes sociales -->
+        <div
+          class="d-block d-md-none d-flex flex-row justify-content-center py-2 px-2"
+        >
+ 
+          <div class="d-flex justify-content-center align-items-center">
+            <a
+              href="https://www.youtube.com/@TechTep"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary"
+            >
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a
+              href="mailto:joseagustinnuch@gmail.com"
+              type="button"
+              class="btn btn-outline-primary ms-1"
+            >
+              <i class="bi bi-envelope"> </i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Barra de tabs para moverse por el contenido de la página web -->
+        <nav class="d-flex justify-content-center d-block d-md-none">
+          <div
+            class="nav nav-tabs my-4 px-4 d-flex justify-content-center border-0 py-3"
+            id="nav-tab"
+            role="tablist"
+          >
+            <button
+              class="nav-link active p-2 px-3 rounded border-0"
+              id="nav-proyectos-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-proyectos"
+              type="button"
+              role="tab"
+              aria-controls="nav-proyectos"
+              aria-selected="true"
+            >
+              Proyectos
+            </button>
+
+            <button
+              class="nav-link p-3 px-3 rounded ms-2 border-0"
+              id="nav-habilidades-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-habilidades"
+              type="button"
+              role="tab"
+              aria-controls="nav-habilidades"
+              aria-selected="false"
+            >
+              Habilidades
+            </button>
+          </div>
+        </nav>
+
+        <!-- Paneles que contienen la información de los tabs -->
+        <div class="tab-content d-block d-md-none" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-proyectos"
+            role="tabpanel"
+            aria-labelledby="nav-proyectos-tab"
+            tabindex="0"
+          >
+            <!-- Muestra los proyectos en dispositivos pequeños -->
+            <section class="d-block d-sm-none">
+              <div class="d-flex justify-content-center">
+                <div
+                  class="proyCae d-flex flex-column overflow-hidden"
+                  style="width: 280px; height: 200px"
+                ></div>
+                <div class="text-light position-absolute mt-5">
+                  <h4 class="SubTitulos" style="font-size: 1rem">
+                    Plataforma de desarrollo<br />
+                    para SimRacing
+                  </h4>
+                  <h3 class="Titulo">Cae 32</h3>
+                  <a href="https://github.com/janc18/CAE32">
+                    <button
+                      type="button"
+                      name="button"
+                      class="btn btn-primary rounded-pill"
+                    >
+                      <i class="bi bi-link"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div
+                  class="proyEsp d-flex flex-column overflow-hidden"
+                  style="width: 280px; height: 200px; margin-top: 20px"
+                ></div>
+                <div class="text-light position-absolute mt-5">
+                  <h4 class="SubTitulos" style="font-size: 1rem">
+                    Reloj multiproposito
+                  </h4>
+                  <h3 class="Titulo">ESP32-watchdog</h3>
+                  <a href="https://github.com/janc18/ESP32-watchdog">
+                    <button
+                      type="button"
+                      name="button"
+                      class="btn btn-primary rounded-pill"
+                    >
+                      <i class="bi bi-link"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div
+                  class="proyCar d-flex flex-column overflow-hidden"
+                  style="width: 280px; height: 200px; margin-top: 20px"
+                ></div>
+                <div class="text-light position-absolute mt-5">
+                  <h4 class="SubTitulos" style="font-size: 1rem">
+                    Analisis de trayecto
+                  </h4>
+                  <h3 class="Titulo">Car-Data-Collector</h3>
+                  <a href="https://github.com/janc18/Car-Data-Collector">
+                    <button
+                      type="button"
+                      name="button"
+                      class="btn btn-primary rounded-pill"
+                    >
+                      <i class="bi bi-link"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center mt-4">
+                <div
+                  class="proyRaspi d-flex flex-column overflow-hidden"
+                  style="width: 280px; height: 200px; margin-top: 20px"
+                ></div>
+                <div class="text-light position-absolute mt-5">
+                  <h3 class="Titulo">
+                    Kit de herramientas <br />
+                    para Hardware
+                  </h3>
+                  <a
+                    href="https://github.com/janc18/RPiZero-MCU-Programming-Toolkit"
+                  >
+                    <button
+                      type="button"
+                      name="button"
+                      class="btn btn-primary rounded-pill"
+                    >
+                      <i class="bi bi-link"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="detalles_proyecto" style="margin-top: 20px">
+                  <div class="sobreMi-info">
+                    <p style="text-align: justify;">
+                      Diseñé y desarrollé completamente un tablero para la Liga de Fútbol durante mi trabajo (IME). El tablero utiliza 2 microcontroladores (ESP32, Arduino Mega) 
+                      y permite ingresar el nombre del equipo a través de una página web controlada por WiFi.
+                       También fui responsable de la programación del tablero desde su diseño hasta su concepción.
+                    </p>
+                  </div>
+                </div>
+              </div>
+             
+            </section>
+          
+
+            <!-- Muestra los proyectos en dispositivos medianos -->
+            <section class="d-none d-sm-block d-md-none">
+              <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div
+                    class="proyCae d-flex flex-column overflow-hidden"
+                    style="width: 400px; height: 200px"
+                  ></div>
+                  <div class="text-light position-absolute mt-5">
+                    <h4 class="SubTitulos" style="font-size: 1rem">
+                      Plataforma de desarrollo<br />
+                      para SimRacing
+                    </h4>
+                    <h3 class="Titulo">Cae 32</h3>
+                    <a href="https://github.com/janc18/CAE32">
+                      <button
+                        type="button"
+                        name="button"
+                        class="btn btn-primary rounded-pill"
+                      >
+                        <i class="bi bi-link"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div
+                    class="proyEsp d-flex flex-column overflow-hidden"
+                    style="width: 400px; height: 200px"
+                  ></div>
+                  <div class="text-light position-absolute mt-5">
+                    <h4 class="SubTitulos" style="font-size: 1rem">
+                      Reloj multiproposito
+                    </h4>
+                    <h3 class="Titulo">ESP32-watchdog</h3>
+                    <a href="https://github.com/janc18/ESP32-watchdog">
+                      <button
+                        type="button"
+                        name="button"
+                        class="btn btn-primary rounded-pill"
+                      >
+                        <i class="bi bi-link"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div
+                    class="proyCar d-flex flex-column overflow-hidden"
+                    style="width: 400px; height: 200px; margin-top: 20px"
+                  ></div>
+                  <div class="text-light position-absolute mt-5">
+                    <h4 class="SubTitulos" style="font-size: 1rem">
+                      Analisis de trayecto
+                    </h4>
+                    <h3 class="Titulo">Car-Data-Collector</h3>
+                    <a href="https://github.com/janc18/Car-Data-Collector">
+                      <button
+                        type="button"
+                        name="button"
+                        class="btn btn-primary rounded-pill"
+                      >
+                        <i class="bi bi-link"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div
+                    class="proyRaspi d-flex flex-column overflow-hidden"
+                    style="width: 400px; height: 200px; margin-top: 20px"
+                  ></div>
+                  <div class="text-light position-absolute mt-5">
+                    <h4 class="SubTitulos" style="font-size: 1rem">
+                      Kit de herramientas <br />para Hardware
+                    </h4>
+                    <h3 class="Titulo">
+                      RPiZero MCU <br />
+                      Programming Toolkit
+                    </h3>
+                    <a
+                      href="https://github.com/janc18/RPiZero-MCU-Programming-Toolkit"
+                    >
+                      <button
+                        type="button"
+                        name="button"
+                        class="btn btn-primary rounded-pill"
+                      >
+                        <i class="bi bi-link"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="detalles_proyecto" style="margin-top: 20px">
+                  <div class="sobreMi-info">
+                    <p style="text-align: justify;">
+                      Diseñé y desarrollé completamente un tablero para la Liga de Fútbol durante mi trabajo (IME). El tablero utiliza 2 microcontroladores (ESP32, Arduino Mega) 
+                      y permite ingresar el nombre del equipo a través de una página web controlada por WiFi.
+                       También fui responsable de la programación del tablero desde su diseño hasta su concepción.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+            
+            </section>
+          </div>
+          
+
+          <!-- Muestra las habilidades del programador en dispositivos pequeños -->
+          <div
+            class="tab-pane fade"
+            id="nav-habilidades"
+            role="tabpanel"
+            aria-labelledby="nav-habilidades-tab"
+            tabindex="0"
+          >
+            <section class="d-block d-sm-none">
+              <div class="d-flex justify-content-center">
+                <div class="skills__area">
+                  <h3 class="skills__title">Hardware</h3>
+
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+                        <div>
+                          <h3 class="skills__name">Diseño de PCB</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Soldadura SMD THT</h3>
+                          <span class="skills__level">Intermedio</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Debugging Hardware</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Comunicación:UART,SPI,I2C</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">
+                            Selección de componentes (BOM)
+                          </h3>
+                          <span class="skills__level">Intermedio</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Impresion 3D</h3>
+                          <span class="skills__level">Intermedio</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mt-4">
+                <div class="skills__area">
+                  <h3 class="skills__title">Software</h3>
+
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">GTK3</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Linux</h3>
+                          <span class="skills__level">Intermedio</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">C</h3>
+                          <span class="skills__level">Intermedio</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Python</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Kicad</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Freecad</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Git</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Muestra las habilidades en dispositivos medianos -->
+            <section class="d-none d-sm-block d-md-none">
+              <div class="row">
+                <div class="col-sm-6 d-flex">
+                  <div class="skills__area">
+                    <h3 class="skills__title">Hardware</h3>
+
+                    <div class="skills__box">
+                      <div class="skills__group">
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Diseño PCB</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Soldadura SMD THT</h3>
+                            <span class="skills__level">Intermedio</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Debugging Hardware</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="skills__group">
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Comunicación:UART,SPI,I2C</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">
+                              Selección de componentes (BOM)
+                            </h3>
+                            <span class="skills__level">Intermedio</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Impresión 3D</h3>
+                            <span class="skills__level">Avanzado</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="row">
+                <div class="col-sm-6 d-flex">
+                  <div class="skills__area">
+                    <h3 class="skills__title">Software</h3>
+
+                    <div class="skills__box">
+                      <div class="skills__group">
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Gtk3</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Linux</h3>
+                            <span class="skills__level">Intermedio</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">C</h3>
+                            <span class="skills__level">Intermedio</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="skills__group">
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Python</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Kicad</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Freecad</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)"
+                          >
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Git</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- ======== Cierre para dispositivos móviles ======== -->
+
+    <!-- ======== Apertura para tablets y computadoras ======== -->
+    <section class="d-none d-md-block pt-5">
+      <nav class="navbar navbar-expand fixed-top px-5 barra-mobiles">
+        <div class="container-fluid mt-3 mb-3 px-5">
+          <a class="TituloBrand" href="#"> José Agustín </a>
+
+          <div class="navbar-nav">
+            <a class="TitulosNav" href="#"> Inicio </a>
+
+            <a class="TitulosNav" href="#sobreMi"> Sobre mí </a>
+
+            <a class="TitulosNav" href="#habilidades"> Habilidades </a>
+
+            <a class="TitulosNav" href="#proyectos"> Proyectos </a>
+
+            <a class="TitulosNav" href="#contacto"> Contacto </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Muestra la información principal del desarrollador -->
+      <div
+        id="inicio"
+        class="mx-5 py-5 d-flex"
+        style="margin-top: 100px; margin-bottom: 100px"
+      >
+        <div
+          class="w-25 d-flex justify-content-center flex-column align-items-center"
+        >
+          <a href="https://github.com/janc18" target="_blank">
+            <i class="bi bi-github icono_contacto" style="font-size: 30px"> </i>
+          </a>
+          <a
+            href="https://www.youtube.com/@TechTep"
+            target="_blank"
+            class="my-2"
+          >
+            <i class="bi bi-youtube icono_contacto_tel" style="font-size: 30px">
+            </i>
+          </a>
+        </div>
+
+        <div class="w-75 d-flex pt-4 py-5 mb-5">
+          <div class="w-50">
+            <h1 class="TituloQuienSoy">Hola, soy</h1>
+            <h1 class="TituloQuienSoy">
+              José Agustín <i class="bi bi-code-slash"></i>
+            </h1>
+            <h2 class="SubTitulosQuienSoy text-start">
+              Desarrollador de sistemas embebidos
+            </h2>
+            <p class="ParrafoQuienSoy text-start pe-5">
+              Soy ingeniero en Mecatrónica interesado en el desarrollo de sistemas embebidos y en la aplicación de tecnología 
+              para resolver problemas cotidianos. Me fascina trabajar en proyectos que desafíen mis habilidades y me permitan 
+              aprender constantemente.
+            </p>
+
+            <a href="#contacto">
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary p-3 me-3 SubTitulos"
+                style="font-size: 0.9rem"
+              >
+                Contactame
+                <i
+                  class="bi bi-caret-right-fill ms-3"
+                  style="font-size: 0.9rem"
+                >
+                </i>
+              </button>
+            </a>
+          </div>
+          <div class="home_img">
+            <div
+              class="d-flex justify-content-center rounded-circle overflow-hidden circuloPerfilGrande"
+            >
+              <img
+                src="img/logo-removebg-preview.png"
+                alt=""
+                style="width: 225px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección Sobre mí -->
+      <h2 id="sobreMi">Sobre mí</h2>
+      <div
+        id="inicio"
+        class="mx-5 py-5 d-flex"
+        style="margin-top: 100px; margin-bottom: 100px"
+      >
+        <div class="sobreMi_container d-flex justify-content-center">
+          <div class="img-sobreMi">
+            <img
+              src="img/logo-removebg-preview.png"
+              alt=""
+              class="circuloPerfilGrande img-sobreMi-estilo"
+            />
+          </div>
+          <div class="sobreMi-data w-50">
+            <p>
+              Soy apasionado por el desarrollo de hardware y software,
+              me encanta aprender a lo largo del proceso de creación de nuevos dispositivos.
+            </p>
+            <div class="sobreMi-info">
+              <div class="sobreMi-info-box">
+                <span class="Titulo d-block text-center">1</span>
+                <span class="SubTitulos d-block text-center"
+                  >Años de experiencia
+                </span>
+              </div>
+              <div class="sobreMi-info-box">
+                <span class="Titulo d-block text-center">4</span>
+                <span class="SubTitulos d-block text-center"
+                  >Proyectos en proceso
+                </span>
+              </div>
+              <div class="sobreMi-info-box">
+                <span class="Titulo d-block text-center">1</span>
+                <span class="SubTitulos d-block text-center">
+                  Proyecto completados
+                </span>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a
+                href="pdf/developerCV.pdf"
+                download
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button
+                  type="button"
+                  name="button"
+                  class="btn btn-primary p-3 me-3 SubTitulos"
+                  style="font-size: 0.9rem"
+                >
+                  Descargar CV
+                  <i class="bi bi-download" style="font-size: 0.9rem"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Habilidades -->
+
+      <h2 id="habilidades">Habilidades</h2>
+      <div
+        class="mx-5 py-5 d-flex justify-content-center"
+        style="margin-top: 100px; margin-bottom: 100px"
+      >
+        <!-- Desarrollo de Hardware -->
+        <div class="d-flex justify-content-center">
+          <div class="skills__area">
+            <h3 class="skills__title">Hardware</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  ></i>
+
+                  <div>
+                    <h3 class="skills__name">Diseño de PCB</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  ></i>
+
+                  <div>
+                    <h3 class="skills__name">Soldadura SMD THT</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Debugging Hardware</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Comunicación:UART,SPI,I2C</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Selección de componentes (BOM)</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Impresión 3D</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desarrollo de Software -->
+
+        <div class="d-flex justify-content-center">
+          <div class="skills__area">
+            <h3 class="skills__title">Software</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Gtk3</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Linux</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">C</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Kicad</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">FreeCad</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  >
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección Proyectos -->
+
+      <h2 id="proyectos">Proyectos</h2>
+      <div
+        class="mx-5 py-5 d-flex justify-content-center"
+        style="margin-top: 100px; margin-bottom: 100px"
+      >
+        <a href="https://github.com/janc18/CAE32">
+          <div class="d-flex justify-content-center" style="margin-inline: 2%">
+            <div
+              class="proyCae d-flex flex-column overflow-hidden"
+              style="width: 400px; height: 200px"
+            ></div>
+            <div class="text-light position-absolute mt-5">
+              <h4 class="SubTitulos" style="font-size: 1rem">
+                Plataforma de desarrollo para SimRacing
+              </h4>
+              <h3 class="Titulo">Cae 32</h3>
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary rounded-pill"
+              >
+                <i class="bi bi-link"></i>
+              </button>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/janc18/ESP32-watchdog">
+          <div class="d-flex justify-content-center" style="margin-inline: 2%">
+            <div
+              class="proyEsp d-flex flex-column overflow-hidden"
+              style="width: 400px; height: 200px"
+            ></div>
+            <div class="text-light position-absolute mt-5">
+              <h4 class="SubTitulos" style="font-size: 1rem">
+                Reloj multiproposito
+              </h4>
+              <h3 class="Titulo">ESP32-watchdog</h3>
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary rounded-pill"
+              >
+                <i class="bi bi-link"></i>
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="mx-5 py-5 d-flex justify-content-center"
+        style="margin-top: 100px; margin-bottom: 100px"
+      >
+        <a href="https://github.com/janc18/Car-Data-Collector">
+          <div class="d-flex justify-content-center" style="margin-inline: 2%">
+            <div
+              class="proyCar d-flex flex-column overflow-hidden"
+              style="width: 400px; height: 200px"
+            ></div>
+            <div class="text-light position-absolute mt-5">
+              <h4 class="SubTitulos" style="font-size: 1rem">
+                Analisis de trayecto
+              </h4>
+              <h3 class="Titulo">Car-Data-Collector</h3>
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary rounded-pill"
+              >
+                <i class="bi bi-link"></i>
+              </button>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/janc18/RPiZero-MCU-Programming-Toolkit">
+          <div class="d-flex justify-content-center" style="margin-inline: 2%">
+            <div
+              class="proyRaspi d-flex flex-column overflow-hidden"
+              style="width: 400px; height: 200px"
+            ></div>
+            <div class="text-light position-absolute mt-5">
+              <h4 class="SubTitulos" style="font-size: 1rem">
+                Kit de herramientas para Hardware
+              </h4>
+              <h3 class="Titulo">RPiZero MCU <br />Programming Toolkit</h3>
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary rounded-pill"
+              >
+                <i class="bi bi-link"></i>
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="contenedor_imagenes">
+        <!-- Video e imagenes -->
+        <div style="width: 100%; margin: 30px auto">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="50000"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./img/videos/1682482016182.jpg"
+                  style="width: 100%; height: auto"
+                />
+              </div>
+              <div class="carousel-item">
+                <video controls style="width: 100%; height: auto">
+                  <source
+                    src="./img/videos/VID-20220226-WA0002.mp4"
+                    type="video/mp4"
+                  />
+                  Tu navegador no soporta el tag video.
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video controls style="width: 100%; height: auto">
+                  <source
+                    src="./img/videos/VID-20220227-WA0000.mp4"
+                    type="video/mp4"
+                  />
+                  Tu navegador no soporta el tag video.
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video controls style="width: 100%; height: auto">
+                  <source
+                    src="./img/videos/VID_20220214_070435.mp4"
+                    type="video/mp4"
+                  />
+                  Tu navegador no soporta el tag video.
+                </video>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+        <!--====================-->
+        <div class="detalles_proyecto">
+          <div class="sobreMi-info">
+            <p style="text-align: justify;">
+              Diseñé y desarrollé completamente un tablero para la Liga de Fútbol durante mi trabajo (IME). El tablero utiliza 2 microcontroladores (ESP32, Arduino Mega) 
+              y permite ingresar el nombre del equipo a través de una página web controlada por WiFi.
+               También fui responsable de la programación del tablero desde su diseño hasta su concepción.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Detalles del proyecto-->
+
+      <!-- Sección Contacto -->
+
+      <h2 id="contacto">Contacto</h2>
+      <div
+        class="mx-5 py-5 d-flex justify-content-center"
+        style="margin-top: 100px; margin-bottom: 100px"
+      >
+        <div class="d-flex grid">
+          <div class="justify-content-center">
+            <div class="d-flex grid mb-3">
+              <i class="bi bi-envelope"></i>
+              <div class="d-block">
+                <h3 class="Titulo">Correo</h3>
+                <span class="SubTitulos">joseagustinnuch@gmail.com</span>
+              </div>
+            </div>
+            <div class="d-flex grid">
+              <i class="bi bi-geo-alt"></i>
+
+              <div class="d-block">
+                <h3 class="Titulo">Ubicación</h3>
+                <span class="SubTitulos">México</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== Cierre para tablets y computadoras ======== -->
+    <!-- Detalles de un proyecto -->
+    <!--</div>-->
+
+    <!-- JavaScript with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

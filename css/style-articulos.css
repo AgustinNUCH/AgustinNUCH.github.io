@@ -1,0 +1,320 @@
+.icono_contacto{
+  color:   #bfba9f  ;
+  transition-duration: 1s;
+  transition-property: color;
+}
+.icono_contacto:hover{
+  color: #59c3ff;
+}
+
+.icono_contacto_tel{
+  color:   #7BA696  ;
+  transition-duration: 1s;
+  transition-property: color;
+}
+.icono_contacto_tel:hover{
+  color:    #59c3ff   ;
+}
+
+.icono_contacto_lin{
+  color:   #bfba9f  ;
+  transition-duration: 1s;
+  transition-property: color;
+}
+.icono_contacto_lin:hover{
+  color:     #86d3ff    ;
+}
+
+.barra-mobiles {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+
+}
+
+#nav-tab{
+  background-color:  #7BA696;
+  border-radius: 16px;
+}
+
+.SubTitulos{
+  color: var(--color-subtitulos);
+  font-size: 1rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+}
+
+.Titulo{
+  color: var(--color-titulos);
+  font-size: 1.5rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 600;
+}
+
+.TituloQuienSoy{
+  color: var(--color-titulos);
+  font-size: 2.25rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 600;
+}
+
+.SubTitulosQuienSoy{
+  color: var(--color-subtitulos);
+  font-size: 1.8rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+}
+
+.ParrafoQuienSoy{
+  color: var(--color-subtitulos);
+  font-size: 1.2rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+}
+
+
+.proyEsp{
+  background-image: url("../img/proyectos/esp32.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  filter: brightness(50%);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.proyRaspi{
+  background-image: url("../img/proyectos/Proyecto_2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  filter: brightness(50%);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.proyCae{
+  background-image: url("../img/proyectos/modulo.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  filter: brightness(50%);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.proyCar{
+  background-image: url("../img/proyectos/automotive-big-data-part3-cover-image.webp");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  filter: brightness(50%);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.carousel-item video {
+  border-radius: 20px;
+}
+
+.contenedor_imagenes {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: auto; /* O cualquier otra altura que desees */
+  padding: 0 20px;
+  border: 3px solid #678e88;
+  border-radius: 40px;
+  grid-column-gap: 10px; /* Agregar espacio entre las columnas */
+}
+.proyRaspi:hover{
+  transform: scale(1.05);
+}
+.detalles_proyecto{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  padding: 15px;
+  height: auto;
+}
+
+.proyEsp:hover{
+  transform: scale(1.05);
+}
+
+.proyCae:hover{
+  transform: scale(1.05);
+}
+
+.proyCar:hover{
+  transform: scale(1.05);
+}
+
+
+.proyAutos{
+  background-image: url("../img/proyectos/proyecto_2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  filter: brightness(50%);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.proyAutos:hover{
+  transform: scale(1.05);
+}
+
+.proyBlog{
+  background-image: url("../img/proyectos/blog_personal.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  filter: brightness(50%);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.proyBlog:hover{
+  transform: scale(1.05);
+}
+
+
+/* Colores de fondo para botones */
+
+.nav-link, .nav-link:focus ,.nav-link:hover{
+  color: white !important;
+  background-color: var(--color-fondo) !important;
+}
+
+.nav-link, .nav-link:visited{
+  background-color: transparent !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited  {
+  background-color: #678e88 !important;
+  border-color: #000 !important;
+}
+
+.btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited {
+  border-color: #7BA696 !important;
+}
+
+/* Varios */
+
+h2 {
+  color: var(--color-titulos);
+  font-family: var(--fuente-titulos);
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+p {
+  color: var(--color-titulos);
+  font-size: 1.2rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 300;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Sección Sobre Mí */
+
+#sobreMi {
+  padding-top: 5rem;
+}
+
+.sobreMi-data {
+  padding-left: 5rem;
+}
+
+.sobreMi-info{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.sobreMi-info-box {
+  padding-inline: 1rem;
+}
+
+.img-sobreMi-estilo {
+  border-radius: 10px;
+}
+
+/* Sección Habilidades */
+
+#habilidades {
+  padding-top: 5rem;
+}
+
+/* Sección Proyectos */
+
+#proyectos {
+
+  padding-top: 5rem;
+}
+
+/* Sección Contacto */
+
+#contacto {
+  padding-top: 5rem;
+}
+
+
+
+.contact__icon{
+  color: white;
+  font-size: 2rem;
+  margin-right: var(--mb-0-75);
+}
+
+.contact__content{
+  background-color: #7D28B3;
+  border-radius: .5rem;
+  backdrop-filter: blur(8px);
+  padding: .75rem 1rem .25rem;
+}
+
+.contact__name{
+  border: none;
+  background-color: var(--input-color);
+  color: var(--color-titulos);
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  font-family: var(--body-font);
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+  width: 100%;
+}
+
+.contact__email{
+  border: none;
+  background-color: var(--input-color);
+  color: var(--color-titulos);
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  font-family: var(--body-font);
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+  width: 100%;
+}
+
+.contact__msg{
+  border: none;
+  background-color: var(--input-color);
+  color: var(--color-titulos);
+  font-family: var(--body-font);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+  width: 100%;
+}
+
+.button:hover{
+  cursor: pointer;
+}
